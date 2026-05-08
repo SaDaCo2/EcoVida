@@ -1,0 +1,573 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Quicksand-Medium";
+    src: url(../fonts/Quicksand-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url(../fonts/Lato-Regular.ttf);
+}
+
+/*MENU*/
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+.menuLogo {
+    display: flex;
+    height: 70px;
+    width: auto;
+}
+
+.contMenu {
+    display: flex;
+    list-style: none;
+}
+
+.menu li {
+    position: relative;
+    display: block;
+}
+
+.menu li a {
+    display: block;
+    line-height: 70px;
+    font-family: "Quicksand-Medium";
+    color: #333;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.menu li a:hover {
+    background-color: #2FA084;
+    color: #002F00;
+}
+
+/*SUBMENU*/
+
+.submenu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    background-color: rgba(111, 207, 151, 0.8);
+    backdrop-filter: blur(5px);
+    position: absolute;
+
+    min-width: 214px;
+    flex-direction: column;
+    z-index: 100;
+    list-style: none;
+    border-radius: 30px;
+}
+
+.dropdown li {
+    width: 100%;
+    display: block;
+}
+
+.dropdown li a {
+    line-height: normal;
+    padding: 15px 20px;
+    color: #333;
+
+    display: block;
+    text-decoration: none;
+    transition: background 0.1s;
+}
+
+.submenu:hover .dropdown {
+    display: flex;
+}
+
+.dropdown li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/*BANNER*/
+
+.banner {
+    background-image: url(/img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+    color: #EEEEEE;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 100px;
+    font-family: "Lato-Regular";
+}
+
+.banner p {
+    font-size: 40px;
+    font-family: "Lato-Regular";
+}
+
+/*NOSOTROS*/
+
+.nosotros {
+    padding: 80px 20px;
+    background-color: #FFFFFF;
+}
+
+.contNosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.bloqueTexto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tituloNosotros {
+    font-size: 2.8rem;
+    color: #1F6F5F;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 60px;
+    font-family: "Quicksand-Medium"
+}
+
+.contParrafos {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.columna {
+    flex: 1;
+    line-height: 1.8;
+    text-align: justify;
+    color: #000000;
+    font-size: 1.0rem;
+    font-family: "Lato-Regular";
+}
+
+.nosotrosImg {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nosotrosImg img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.08);
+}
+
+/*SERVICIOS*/
+
+.servicios {
+    background-color: #EEEEEE;
+    padding-top: 50px;
+    padding-bottom: 30px
+}
+
+.servicios p {
+    font-family: "Roboto-VariableFont_wdth,wght";
+    max-width: 800px;
+    text-align: justify;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.tarjetas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 40px 50px 40px;
+}
+
+.tarjeta {
+    border: solid 2px #000000;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tarjeta:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+    border-color: #6FCF97;
+}
+
+.servicios div div img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    display: block;
+    margin: 0 auto;
+}
+
+.servicios h2 {
+    text-align: center;
+    font-family: "Quicksand-Medium";
+    font-size: 60px;
+    color: #1F6F5F;
+
+}
+
+.servicios div div h3 {
+    font-family: "Quicksand-Medium";
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.servicios div .subtServicio {
+    padding: 20px 0px 0px 0px;
+}
+
+.servicios div div p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lato-Regular";
+    font-size: 15px;
+    color: #000000;
+    max-width: 300px;
+}
+
+.servicios div div ul {
+    color: #000000;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-left: 45px;
+}
+
+.servicios div div a {
+    color: #2FA084;
+    display: block;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-family: "Quicksand-Medium", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*PRODUCTOS*/
+
+.productos {
+    background-color: #FFFFFF;
+    padding: 35px;
+}
+
+.productos h2 {
+    text-align: center;
+    font-family: "Quicksand-Medium";
+    font-size: 60px;
+    color: #1F6F5F;
+    margin-bottom: 30px;
+}
+
+.imgProd {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding: 20px;
+}
+
+.cajaImg {
+    width: 350px;
+    height: 350px;
+    border-radius: 40px;
+    border: solid 2px #6FCF97;
+    overflow: hidden;
+    background-color: #fff;
+    position: relative;
+    margin: 0 auto;
+}
+
+.cajaImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border: none !important;
+    outline: none;
+}
+
+.cajaImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border: none !important;
+    transition: transform 0.6s ease;
+}
+
+.tarjetaProd:hover .cajaImg img {
+    transform: scale(1.15);
+}
+
+.tarjetaProd p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tarjetaProd p a {
+    color: #2FA084;
+    text-decoration: none;
+    font-family: "Lato-Regular", sans-serif;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.tarjetaProd p a:hover {
+    color: #1F6F5F;
+}
+
+/*TESTIMONIOS*/
+
+.testimonios {
+    background-color: #EEEEEE;
+    padding-bottom: 30px;
+}
+
+.testimonios h2 {
+    text-align: center;
+    font-family: "Quicksand-Medium";
+    font-size: 60px;
+    color: #1F6F5F;
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.tarjetaTest p {
+    font-family: "Lato-Regular";
+    max-width: 800px;
+    font-size: 20px;
+    margin: 0 auto;
+    padding: 30px;
+    flex-grow: 1;
+}
+
+.tarjetasTest {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px 60px 30px 60px;
+}
+
+.tarjetaTest {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border: solid 2px #002F00;
+    border-radius: 30px;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: inset;
+    box-shadow: 0 15px 35px rgba(31, 111, 95, 0.2);
+}
+
+.comillas {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 50px;
+}
+
+.imgTest {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: solid 2px #002F00;
+}
+
+.testimonios h2 {
+    text-align: center;
+    font-family: "Quicksand-Medium";
+    font-size: 60px;
+    color: #1F6F5F;
+}
+
+.testimonios div div h3 {
+    font-family: "Quicksand-Medium";
+    font-size: 15px;
+    color: #002F00;
+    text-align: center;
+}
+
+.subtServicio {
+    padding: 20px 0px 0px 0px;
+}
+
+.testimonios div div p {
+    margin: 0 auto;
+    text-align: center;
+    font-family: "Lato-Regular";
+    font-size: 15px;
+    color: #002F00;
+    max-width: 300px;
+}
+
+.testimonios div div a {
+    display: block;
+    margin: 15px auto 0 auto;
+    text-align: center;
+    font-family: "Lato-Regular", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*FOOTER*/
+
+footer {
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/fondoFooter.jpg");
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0 20px 0;
+    color: #EEEEEE;
+}
+
+footer div div h3 {
+    color: #6FCF97;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: "Quicksand-Medium";
+}
+
+.pie {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding-bottom: 25px; 
+}
+
+.pie::before {
+    display: none;
+}
+
+.redes a img {
+    width: 30px;
+    height: 30px;
+}
+
+.redes a {
+    max-width: 284px;
+}
+
+.linkRed {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    color: #EEEEEE;
+    align-items: center;
+    padding: 10px;
+    justify-content: flex-start;
+    width: 150px;
+    margin: 0 auto; 
+}
+
+.contacto p{
+    padding: 10px 0 10px;
+}
+
+.contacto,
+.redes,
+.form,
+.credito {
+    width: 350px;
+    color: #EEEEEE;
+    font-family: "Quicksand-Medium";
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.form form input {
+    border-radius: 15px;
+    height: 30px;
+    width: 320px;
+    background-color: #6FCF97;
+    padding: 20px 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.form form textarea {
+    border-radius: 15px;
+    height: 80px;
+    width: 320px;
+    resize: none;
+    background-color: #6FCF97;
+    font-family: "Quicksand-Medium";
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.form form{
+    text-align: center;
+    margin: 15px;
+}
+
+.form form input {
+    font-family: "Quicksand-Medium";
+}
+
+.form form button{
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 80px;
+    background-color: #2FA084;
+    color: #EEEEEE;
+    border-radius: 10px;
+    font-family: "Quicksand-Medium";
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.credito {
+    width: 100%; 
+    text-align: center;
+    margin: 0 auto;
+    color: #EEEEEE; 
+    font-family: "Quicksand-Medium";
+    font-size: 14px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
