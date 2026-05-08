@@ -20,8 +20,9 @@
 
 ## 📁 Estructura del Repositorio
 
-* `/img`: Directorio con todos los recursos visuales, iconos y fondos.
 * `/css`: Hojas de estilo organizadas por secciones.
+* `/fonts`: Archivos de tipografías personalizadas (Quicksand, Lato).
+* `/img`: Directorio con todos los recursos visuales, iconos y fondos.
 * `index.html`: Archivo principal con la estructura del sitio.
 
 ## ✒️ Autor
