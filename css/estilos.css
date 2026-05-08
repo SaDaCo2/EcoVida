@@ -104,7 +104,7 @@
 /*BANNER*/
 
 .banner {
-    background-image: url(/img/banner.jpg);
+    background-image: url(../img/banner.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -456,7 +456,7 @@
 
 footer {
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("/img/fondoFooter.jpg");
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("../img/fondoFooter.jpg");
     background-size: cover;
     background-position: center;
     padding: 40px 0 20px 0;
